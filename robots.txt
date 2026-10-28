@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://hmbaloch2535.github.io/text-tools/sitemap.xml

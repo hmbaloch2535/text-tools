@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sort Lines Alphabetically Online - Free A to Z Sorter | TextKit</title>
+<meta name="description" content="Sort lines alphabetically A to Z or Z to A, number-aware, with options to trim, remove empty lines and duplicates.">
+<meta property="og:title" content="Sort Lines Alphabetically Online - Free A to Z Sorter | TextKit">
+<meta property="og:description" content="Sort lines alphabetically A to Z or Z to A, number-aware, with options to trim, remove empty lines and duplicates.">
+<meta property="og:type" content="website">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+<header><div class="nav"><a class="logo" href="index.html">Text<span>Kit</span></a><nav aria-label="Main navigation"><ul><li><a href="index.html">Home</a></li><li><a href="word-counter.html">Word Counter</a></li><li><a href="case-converter.html">Case Converter</a></li><li><a href="about.html">About</a></li><li><a href="privacy-policy.html">Privacy</a></li></ul></nav></div></header>
+<main>
+<div class="hero"><h1>Sort Lines Alphabetically Online - Free A to Z Sorter | TextKit</h1><p>Put a jumbled list in order. Numbers inside words are compared as numbers, so “item2” comes before “item10”.</p><p class="small">Your text stays in your browser. Nothing is uploaded or stored by this site.</p></div>
+<div class="card"><label for="input">Your list, one item per line</label><textarea id="input" placeholder="banana&#10;Apple&#10;cherry&#10;item10&#10;item2"></textarea><p><label><input type="checkbox" id="caseSensitive"> Case sensitive sorting</label><label><input type="checkbox" id="trimLines" checked> Trim each line</label><label><input type="checkbox" id="dropEmpty" checked> Remove empty lines</label><label><input type="checkbox" id="dedupe"> Remove duplicate lines</label></p><p><button onclick="runSort('asc')">Sort A to Z</button><button onclick="runSort('desc')">Sort Z to A</button><button class="secondary" onclick="clearIO('input','output')">Clear</button></p><label for="output">Sorted list</label><textarea id="output" readonly></textarea><p><button class="secondary" onclick="copyOut('output')">Copy result</button><button class="secondary" onclick="downloadOut('output','sorted-lines.txt')">Download .txt</button></p></div>
+<div class="card"><h2>How to use this tool</h2><ol><li>Paste one item per line.</li><li>Pick A to Z or Z to A and your options.</li><li>Copy or download the sorted list.</li></ol></div>
+<div class="card"><h2>Example</h2><p>Input banana, Apple, cherry sorts to Apple, banana, cherry with case-insensitive sorting. With number-aware sorting, item2 comes before item10.</p></div>
+<div class="card"><h2>Frequently asked questions</h2><h3>What is number-aware sorting?</h3><p>Digit runs are compared as whole numbers, so version and file names sort in the order a person expects.</p><h3>What does case sensitive do?</h3><p>When ticked, uppercase letters sort separately from lowercase. When unticked, “Apple” and “apple” sort together.</p><h3>Can I sort and remove duplicates at once?</h3><p>Yes. Tick Remove duplicate lines before sorting; the first copy of each line is kept.</p></div>
+<div class="card"><h2>All free text tools</h2><div class="grid">
+<div class="tool-card"><h3><a href="word-counter.html">Word Counter</a></h3><p>Count words, characters, sentences and paragraphs.</p></div>
+<div class="tool-card"><h3><a href="character-counter.html">Character Counter</a></h3><p>Characters with and without spaces, letters and digits.</p></div>
+<div class="tool-card"><h3><a href="case-converter.html">Text Case Converter</a></h3><p>Uppercase, lowercase, title case and sentence case.</p></div>
+<div class="tool-card"><h3><a href="remove-duplicate-lines.html">Remove Duplicate Lines</a></h3><p>Keep the first copy of each line and drop repeats.</p></div>
+<div class="tool-card"><h3><a href="sort-lines.html">Sort Lines Alphabetically</a></h3><p>Sort a list A to Z or Z to A, with number-aware order.</p></div>
+<div class="tool-card"><h3><a href="remove-extra-spaces.html">Remove Extra Spaces</a></h3><p>Collapse repeated spaces and tidy each line.</p></div>
+<div class="tool-card"><h3><a href="find-replace.html">Find and Replace Text</a></h3><p>Replace words or phrases, with case and pattern options.</p></div>
+<div class="tool-card"><h3><a href="reverse-text.html">Reverse Text</a></h3><p>Reverse characters, words or whole lines.</p></div>
+<div class="tool-card"><h3><a href="slug-generator.html">Text-to-Slug Generator</a></h3><p>Turn a title into a clean, URL-friendly slug.</p></div>
+<div class="tool-card"><h3><a href="line-counter.html">Line Counter</a></h3><p>Count total, empty and non-empty lines.</p></div>
+</div></div>
+</main>
+<footer><div class="wrap"><p><strong>TextKit</strong> - free text tools that run in your browser. Your text is processed on your own device and is not uploaded or stored by this site.</p><p><a href="about.html">About</a> | <a href="contact.html">Contact</a> | <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms.html">Terms</a> | <a href="sitemap.xml">Sitemap</a></p><p class="small">Ad code will only be added after a real Adsterra approval for this site. No ads are shown yet.</p></div></footer>
+<script src="tools.js"></script>
+</body>
+</html>

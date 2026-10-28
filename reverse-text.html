@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reverse Text Online - Free Text Reverser | TextKit</title>
+<meta name="description" content="Reverse text by characters, words or lines, free in your browser.">
+<meta property="og:title" content="Reverse Text Online - Free Text Reverser | TextKit">
+<meta property="og:description" content="Reverse text by characters, words or lines, free in your browser.">
+<meta property="og:type" content="website">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+<header><div class="nav"><a class="logo" href="index.html">Text<span>Kit</span></a><nav aria-label="Main navigation"><ul><li><a href="index.html">Home</a></li><li><a href="word-counter.html">Word Counter</a></li><li><a href="case-converter.html">Case Converter</a></li><li><a href="about.html">About</a></li><li><a href="privacy-policy.html">Privacy</a></li></ul></nav></div></header>
+<main>
+<div class="hero"><h1>Reverse Text Online - Free Text Reverser | TextKit</h1><p>Flip text for puzzles, checks, or formatting experiments. Choose characters, words or lines.</p><p class="small">Your text stays in your browser. Nothing is uploaded or stored by this site.</p></div>
+<div class="card"><label for="input">Your text</label><textarea id="input" placeholder="Paste or type your text here..."></textarea><p><button onclick="runReverse('chars')">Reverse characters</button><button onclick="runReverse('words')">Reverse words</button><button onclick="runReverse('lines')">Reverse lines</button><button class="secondary" onclick="clearIO('input','output')">Clear</button></p><label for="output">Reversed text</label><textarea id="output" readonly></textarea><p><button class="secondary" onclick="copyOut('output')">Copy result</button></p></div>
+<div class="card"><h2>How to use this tool</h2><ol><li>Paste your text.</li><li>Choose characters, words or lines.</li><li>Copy the reversed result.</li></ol></div>
+<div class="card"><h2>Example</h2><p>Reversing the characters of “abc def” gives “fed cba”. Reversing words gives “def abc”.</p></div>
+<div class="card"><h2>Frequently asked questions</h2><h3>What does Reverse characters do?</h3><p>It flips the whole text character by character, including spaces and punctuation.</p><h3>What does Reverse words do?</h3><p>It keeps each word intact and flips their order.</p><h3>What does Reverse lines do?</h3><p>It keeps each line intact and flips the order of lines, which is useful for lists.</p></div>
+<div class="card"><h2>All free text tools</h2><div class="grid">
+<div class="tool-card"><h3><a href="word-counter.html">Word Counter</a></h3><p>Count words, characters, sentences and paragraphs.</p></div>
+<div class="tool-card"><h3><a href="character-counter.html">Character Counter</a></h3><p>Characters with and without spaces, letters and digits.</p></div>
+<div class="tool-card"><h3><a href="case-converter.html">Text Case Converter</a></h3><p>Uppercase, lowercase, title case and sentence case.</p></div>
+<div class="tool-card"><h3><a href="remove-duplicate-lines.html">Remove Duplicate Lines</a></h3><p>Keep the first copy of each line and drop repeats.</p></div>
+<div class="tool-card"><h3><a href="sort-lines.html">Sort Lines Alphabetically</a></h3><p>Sort a list A to Z or Z to A, with number-aware order.</p></div>
+<div class="tool-card"><h3><a href="remove-extra-spaces.html">Remove Extra Spaces</a></h3><p>Collapse repeated spaces and tidy each line.</p></div>
+<div class="tool-card"><h3><a href="find-replace.html">Find and Replace Text</a></h3><p>Replace words or phrases, with case and pattern options.</p></div>
+<div class="tool-card"><h3><a href="reverse-text.html">Reverse Text</a></h3><p>Reverse characters, words or whole lines.</p></div>
+<div class="tool-card"><h3><a href="slug-generator.html">Text-to-Slug Generator</a></h3><p>Turn a title into a clean, URL-friendly slug.</p></div>
+<div class="tool-card"><h3><a href="line-counter.html">Line Counter</a></h3><p>Count total, empty and non-empty lines.</p></div>
+</div></div>
+</main>
+<footer><div class="wrap"><p><strong>TextKit</strong> - free text tools that run in your browser. Your text is processed on your own device and is not uploaded or stored by this site.</p><p><a href="about.html">About</a> | <a href="contact.html">Contact</a> | <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms.html">Terms</a> | <a href="sitemap.xml">Sitemap</a></p><p class="small">Ad code will only be added after a real Adsterra approval for this site. No ads are shown yet.</p></div></footer>
+<script src="tools.js"></script>
+</body>
+</html>
